@@ -10,7 +10,9 @@ public class Main {
         System.out.println(pi + age);
 
         final int NUM = 1;
-        System.out.printf("1" + NUM);
+        System.out.println("1" + NUM);
+
+
     }
 }
 
