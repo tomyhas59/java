@@ -5,14 +5,25 @@ public class Starbucks {
     int no;
     String name;
 
+    Menu[] menus;
+
+
 //생성자: 인스턴스를 만드는 메소드
 
-Starbucks (int no, String name){
-    this.no=no;
-    this.name=name;
-
+    Starbucks (int no, String name, Menu[] menus){
+        this.no=no;
+        this.name=name;
+        this.menus=menus;
 }
 
+    Menu orderMenu (String name) {
+        for (Menu menu : menus) {
+            if (menu.name.equals(name)) {
+                return menu;
+            }
+        }
+        return  null;
+    }
 
 //인스턴스가 가질 메소드
     String intro(){
