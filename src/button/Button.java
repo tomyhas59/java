@@ -3,15 +3,17 @@ package button;
 
 public class Button {
 
+    static  String mode="LIGHT";
+    static  void switchMode(){
+        mode=mode.equals("LIGHT") ? "DARK" :"LIGHT";
+    }
+
 char print;
 int space;
-String mode;
 
-
-Button(char print, int space, String mode){
-    this.print=print;
-    this.space=space;
-    this.mode=mode;
+Button(char print, int space) {
+    this.print = print;
+    this.space = space;
 }
 
 void  place(){

@@ -2,13 +2,21 @@ package button;
 
 public class Main {
     public static void main(String[] args) {
-        Button button1 =new Button('1',1,"DARK");
-        Button buttonPlus =new Button('+',3,"DARK");
-        Button buttonClear =new Button('C',2,"DARK");
+        Button button1 =new Button('1',1);
+        Button buttonPlus =new Button('+',3);
+        Button buttonClear =new Button('C',2);
+
+        Button[] buttons={button1,buttonPlus,buttonClear};
 
 
-        button1.place();
-        buttonPlus.place();
+        for(Button button :buttons){button.place();}
+
+        Button.switchMode();
+
+        for(Button button :buttons){button.place();}
+
+        buttonClear.print='X';
         buttonClear.place();
-    }
+        }
+
 }
