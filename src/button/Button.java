@@ -3,22 +3,27 @@ package button;
 
 public class Button {
 
-    static  String mode="LIGHT";
-    static  void switchMode(){
+   private static  String mode="LIGHT";
+  public static void switchMode(){
         mode=mode.equals("LIGHT") ? "DARK" :"LIGHT";
     }
 
-char print;
-int space;
+private String  print;
+private int space=1;
 
-Button(char print, int space) {
+public Button(String print, int space) {
     this.print = print;
     this.space = space;
 }
 
+public void setSpace (int space){
+    if(space<1||space>4) return;
+    this.space=space;
+}
+
 void  place(){
     System.out.printf(
-            "표시: %c, 공간: %s, 모드:%s%n",
+            "표시: %s, 공간: %s, 모드:%s%n",
             print,space,mode
     );
 }

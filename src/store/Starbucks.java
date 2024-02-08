@@ -3,9 +3,9 @@ package store;
 public class Starbucks {
 //인스턴스가 가질 필드를
 
-    static int lastNo=0;
+    protected static int lastNo=0; //protected 상속 접근
 
-    int no = ++lastNo;
+    protected int no = ++lastNo;
 
     String name;
     Menu[] menus;
@@ -37,11 +37,12 @@ public class Starbucks {
 //인스턴스가 가질 메소드
     String intro(){
     String name="명동";
-        return "안녕하세요, %s %d호 %s점입니다".formatted(brand, no,this.name);
+        System.out.println("안녕하세요!");
+        return "%s %d호 %s점입니다".formatted(brand, no,this.name);
     }
 
     void changeAddress(String address) {
-        name = address;
+        this.name = address;
     }
 
 }
