@@ -3,8 +3,8 @@ package button;
 
 public class Button {
 
-   private static  String mode="LIGHT";
-  public static void switchMode(){
+   private static String mode="LIGHT";
+   public static void switchMode(){
         mode=mode.equals("LIGHT") ? "DARK" :"LIGHT";
     }
 

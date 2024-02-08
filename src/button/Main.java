@@ -6,6 +6,7 @@ public class Main {
         Button button1 =new Button("1",1);
         Button buttonPlus =new Button("+",3);
         Button buttonClear =new Button("C",2);
+        Button toggle=new ToggleButton("Toggle",5,true);//자식 클래스가 부모 자료형에 들어갈 수 있음
 
         Button[] buttons={button1,buttonPlus,buttonClear};
 
@@ -17,7 +18,6 @@ public class Main {
         for(Button button :buttons){button.place();}
         button1.setSpace(2);
 
-        ToggleButton toggle=new ToggleButton("Toggle",5,true);
 
 
         toggle.func();

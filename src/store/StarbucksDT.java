@@ -13,7 +13,7 @@ public class StarbucksDT extends Starbucks {
     }
 
     public  void takeDTOrder(){
-        System.out.printf("%s점 드라이브스루 주문 %s%n", name,(driveThruOpen?"받음":"불가"));
+        System.out.printf("%s점 드라이브스루 주문 %s%n", this.name,(driveThruOpen?"받음":"불가"));
     }
 
     @Override

@@ -5,6 +5,6 @@ public class Main {
         SmartPhone phone=new SmartPhone();
         String pb= phone.powerButton;
         String ss= phone.sdCardSlot;
-
+        //String cp= phone.cpu;  private 접근 불가
     }
 }
