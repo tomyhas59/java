@@ -16,6 +16,14 @@ public class Main {
 
         for(Button button :buttons){button.place();}
         button1.setSpace(2);
+
+        ToggleButton toggle=new ToggleButton("Toggle",5,true);
+
+
+        toggle.func();
+        toggle.func();
+
         }
+
 
 }

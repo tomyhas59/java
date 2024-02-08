@@ -8,7 +8,7 @@ public class Button {
         mode=mode.equals("LIGHT") ? "DARK" :"LIGHT";
     }
 
-private String  print;
+private String print;
 private int space=1;
 
 public Button(String print, int space) {
@@ -26,6 +26,10 @@ void  place(){
             "표시: %s, 공간: %s, 모드:%s%n",
             print,space,mode
     );
+}
+
+public  void func(){
+    System.out.println(print + "입력 적용");
 }
 
 }
