@@ -1,12 +1,9 @@
 public class Method {
     public static void main(String[] args) {
-
-
         int age=add(10,20);
 
-
-        double avg=getAveratge(3,91,14,27,4);
-        double avg2=getAveratge(new int[] {3,91,14,27,4});
+        double avg=getAverage(3,91,14,27,4);
+        double avg2=getAverage(new int[] {3,91,14,27,4});
 
     }
 
@@ -24,7 +21,7 @@ public class Method {
         return  text.toLowerCase().contains(token.toLowerCase());
     }
 
-    static double getAveratge(int... nums){
+    static double getAverage(int... nums){
         double result=0.0;
         for(int num:nums){
             result+=num;
