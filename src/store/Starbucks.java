@@ -17,6 +17,24 @@ public class Starbucks {
     }
 
 
+    //내부 클래스
+    public static class SttGift {
+        private String gifticon= brand + " S기프티콘";  //외부 클래스 필드와 클래스 접근 가능
+
+        public void func(){
+            System.out.println(gifticon);
+        }
+    }
+
+    class  Gift {
+        private  String gifticon=brand+" 기프티콘";
+
+        private SttGift sttGift =new SttGift();
+
+        public  void func(){
+            System.out.println(gifticon);
+        }
+    }
 
 //생성자: 인스턴스를 만드는 메소드
 
@@ -43,6 +61,10 @@ public class Starbucks {
 
     void changeAddress(String address) {
         this.name = address;
+    }
+
+    public Gift getGift(){
+        return  new Gift();
     }
 
 }

@@ -29,7 +29,12 @@ public class Main {
                ((StarbucksDT) store).takeDTOrder();
            } else  store.intro();
        }
+        //static
+        Starbucks.SttGift sttGift=new Starbucks.SttGift();
+        sttGift.func();
 
-
+        //일반 인스턴스 내부 클래스 : getter로 반환
+        Starbucks.Gift gift= chain1.getGift();
+        gift.func();
     }
 }
