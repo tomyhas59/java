@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("자바 프로그래밍"); //sout
-
+        System.out.println(args[0]);
         double pi = 3.14; //실수
         int age = 20; //정수
         byte    _1b=1; //-127~127
