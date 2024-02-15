@@ -17,7 +17,7 @@ public class StarbucksDT extends Starbucks {
     }
 
     @Override
-    String intro(){
+    public String intro(){
         super.intro();
         return "안녕하세요, %s %d호 %s점. 주문 %s%n".formatted(brand, no,this.name,(driveThruOpen?"받음":"불가"));
     }

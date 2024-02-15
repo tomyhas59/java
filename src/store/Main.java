@@ -1,5 +1,6 @@
 package store;
 
+
 public class Main {
     public static  void main(String[] args){
 
@@ -9,13 +10,15 @@ public class Main {
                 new Menu("아이스티",3000,"real"),
         };
 
-        Starbucks chain1= new Starbucks("구디",menus);
+        StarbucksDT chain1= new StarbucksDT("구디",menus);
         Starbucks chain2= new Starbucks("판교",menus);
+
 
         Menu order1=chain1.orderMenu("카푸치노");
         Menu order2=chain1.orderMenu("복숭아");
 
-        chain2.intro();
+        chain1.takeDTOrder();
+        chain2.takeOrder();
 
         chain1.changeAddress("목동");
 

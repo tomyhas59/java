@@ -37,8 +37,7 @@ public class Starbucks {
     }
 
 //생성자: 인스턴스를 만드는 메소드
-
-    Starbucks (String name, Menu[] menus){
+    public Starbucks (String name, Menu[] menus){
         this.name=name;
         this.menus=menus;
 }
@@ -53,10 +52,14 @@ public class Starbucks {
     }
 
 //인스턴스가 가질 메소드
-    String intro(){
+    public String intro(){
     String name="명동";
         System.out.println("안녕하세요!");
-        return "%s %d호 %s점입니다".formatted(brand, no,this.name);
+        return "%s".formatted(this.name);
+    }
+
+    public void takeOrder(){
+        System.out.printf("%s점 주문 받습니다", this.name);
     }
 
     void changeAddress(String address) {
