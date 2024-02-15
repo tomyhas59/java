@@ -3,6 +3,7 @@ package store;
 public class Starbucks {
 //인스턴스가 가질 필드를
 
+    static CoffeeMenu[] coffeeMenus=CoffeeMenu.values();
     protected static int lastNo=0; //protected 상속 접근
 
     protected int no = ++lastNo;

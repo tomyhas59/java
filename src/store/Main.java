@@ -13,6 +13,18 @@ public class Main {
         StarbucksDT chain1= new StarbucksDT("구디",menus);
         Starbucks chain2= new Starbucks("판교",menus);
 
+        CoffeeMenu menu1=CoffeeMenu.AM;
+        CoffeeMenu menu2=CoffeeMenu.CA;
+
+         var byMenus= new CoffeeMenu[]{
+                 CoffeeMenu.valueOf("TEA"),
+                 CoffeeMenu.valueOf("CA"),
+         };
+         //byMenus=[{name: "아이스티", price: 3500},{name:"카푸치노", price: 3200}]
+
+         var orders=new int[]{
+                 menu1.ordinal(), menu2.ordinal(),byMenus[1].ordinal()
+         };
 
         Menu order1=chain1.orderMenu("카푸치노");
         Menu order2=chain1.orderMenu("복숭아");
